@@ -1,6 +1,6 @@
 # Petstore API Tests
 
-Automated API tests for the [Swagger Petstore API](https://petstore.swagger.io) using Jest
+API tests for the [Swagger Petstore API](https://petstore.swagger.io) using Jest
 
 ## Setup
 
@@ -24,9 +24,3 @@ npm test
 
 - **Functional:** Create, read, update, and delete a pet; create and fetch a store order.
 - **Negative:** Verify 404 responses after deleting a pet or order.
-- **Edge Case:** Query multiple statuses with `findByStatus`.
-
-## Observations
-
-- The Petstore API is a shared public service; test data may persist between runs. Tests use timestamp-based IDs and clean up created entities where possible.
-- Tests require outbound network access to `https://petstore.swagger.io/v2`.
